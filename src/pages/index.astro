@@ -1,5 +1,6 @@
 ---
-import Tour from '../components/Tour.astro';
+import Button from '../components/Button.astro';
+import Button2 from '../components/Button2.astro';
 ---
 
 <!doctype html>
@@ -12,8 +13,14 @@ import Tour from '../components/Tour.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
     <link rel="stylesheet" href="/style/global.css">
+    <style>
+        body {
+            /* @apply bg-gray-100; */
+        }
+    </style>
 </head>
-<body>
-    <Tour />
+<body class="bg-gray-100">
+    <Button />
+    <Button2 />
 </body>
 </html>
